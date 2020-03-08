@@ -93,14 +93,17 @@ if (even == 0){
 
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		// alert("You found a match!");
+		document.getElementById("win").play()
 		Swal.fire(
 		  'Good job!',
 		  'You found a match of IT member!',
 		  'success'
 		);
 
+
 	} else {
 		// alert("Sorry, try again");
+		document.getElementById("tie").play()
 		Swal.fire('Sorry, try again');
 		flipCardBack(cardsInPlay[0], cardsInPlay[1]);
 	}
@@ -116,6 +119,7 @@ if (even == 0){
 
 function flipCard(){
 
+	document.getElementById("flip").play()
 	let cardId = this.getAttribute('id');
 
 	// console.log("This is CardId")
