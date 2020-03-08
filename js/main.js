@@ -96,7 +96,7 @@ if (even == 0){
 		document.getElementById("win").play()
 		Swal.fire(
 		  'Good job!',
-		  'You found a match of IT member!',
+		  'You found a match of IT member! Tell us who is it in the whatsapp group!',
 		  'success'
 		);
 
